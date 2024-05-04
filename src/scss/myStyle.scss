@@ -1,0 +1,243 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: url("../../images/backgroundImage.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 0;
+    margin: 0;
+
+
+}
+
+.container {
+    position: relative;
+    background: linear-gradient(to bottom, #339, #333 0%, black 0%, #333 65%);
+    width: 15%;
+    min-height: 120vh;
+    opacity: 0.7;
+    color: beige;
+    text-align: left;
+    font-size: 24px;
+    font-family: fantasy Copperplate;
+    padding: 20px;
+    margin-right: 20px;
+    min-width: 230px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    vertical-align: middle;
+
+}
+
+li:hover {
+    color: lightskyblue;
+    cursor: pointer;
+    font-size: 22px;
+    text-shadow: #FC0 1px 0 10px;
+    vertical-align: middle;
+
+}
+
+.menu {
+    margin-top: 50px;
+    background-color: transparent;
+    min-width: 230px;
+    font-family: cursive;
+}
+
+.menuTitle {
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#productImage {
+    background-color: burlywood;
+    border: 15px solid;
+    padding: 10px;
+    width: 380px;
+    height: 480px;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    position: relative;
+    top: 100px;
+    border-radius: 9%;
+}
+
+.productImage {
+    background-color: transparent;
+    position: absolute;
+    left: 340px;
+    top: 40px;
+
+}
+
+#productImage:hover {
+    background-color: burlywood;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 15px 15px black;
+    backface-visibility: hidden;
+    width: 480px;
+    height: 645px;
+    position: relative;
+    top: 100px;
+    border-radius: 9%;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.ingredients {
+    background: linear-gradient(to bottom, #339, #333 0%, black 0%, #333 65%);
+    position: absolute;
+    color: gold;
+    font-size: 20px;
+    left: 530px;
+    top: 80px;
+    min-width: 730px;
+    max-width: 730px;
+    border-radius: 9%;
+    padding-top: 10px;
+    padding-right: 10px;;
+}
+
+.add, .remove {
+    width: 120px;
+    padding: 10px;
+    color: ivory;
+    min-width: 100px;
+    vertical-align: middle;
+    font-size: 14px;
+    background: linear-gradient(to bottom, #334, #333 0%, burlywood 0%, #333 75%);
+    border-radius: 10px;
+}
+
+.add:hover, .remove:hover {
+    font-size: 16px;
+}
+
+.confirm-order {
+    align-content: center;
+    height: 60px;
+    width: 92%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: gold;
+    min-width: 100px;
+    vertical-align: middle;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #334, #333 0%, black 0%, #333 75%);
+    border-radius: 10px;
+
+}
+
+.confirm-order:hover {
+    font-size: 18px;
+}
+
+.product-title {
+    color: beige;
+    text-align: center;
+    font-family: cursive;
+    font-size: 48px;
+    position: absolute;
+    left: 430px;
+    width: fit-content;
+    text-shadow: 10px 10px black;
+    margin: 10px;
+}
+
+td {
+    min-width: 180px;
+    text-align: left;
+}
+
+.status-img {
+    width: 41px;
+    height: 41px;
+}
+
+td.cal, td.status_img {
+    min-width: 80px;
+    padding-right: 10px;
+}
+
+.basket {
+    color: ivory;
+    width: 160px;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 21px;
+    background: beige;
+    background: linear-gradient(to bottom, #334, #333 0%, bisque 0%, #333 75%);
+    border-radius: 10px;
+}
+
+.basket:hover {
+    font-size: 24px;
+    text-shadow: 5px 5px black;
+}
+
+.container1 {
+    background-color: black;
+    width: 720px;
+    min-height: 500px;
+    height: fit-content;
+    position: absolute;
+    left: 380px;
+    top: 15%;
+    padding: 50px;
+    opacity: 0.8;
+    color: beige;
+    font-size: 21px;
+    border-radius: 5%;
+}
+
+.description-product {
+    color: beige;
+}
+
+#basketInfo {
+    color: beige;
+
+}
+
+.total-price-btn {
+    width: 575px;
+    padding: 10px;
+    margin: 20px 10px 10px 0;
+    background: black;
+    color: beige;
+    opacity: 0.9;
+
+}
+
+.product-description:hover {
+    font-size: 20px;
+    text-shadow: none;
+    color: gold;
+}
+
+.delProduct {
+    width: 36px;
+    height: 36px;
+    background-color: black;
+}
+
+li.product-description {
+    line-height: 45px;
+    padding: 50px;
+    font-family: cursive;
+}
+
