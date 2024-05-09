@@ -1,7 +1,6 @@
 class Burger {
-    #base_ingredients = ['Bun', 'Meat']
     constructor() {
-        this.base_ingredients = this.#base_ingredients
+        this.base_ingredients = ['Bun', 'Meat']
         this.OnionCalories = 7;
         this.SaladCalories = 17;
         this.CheeseCalories = 58;

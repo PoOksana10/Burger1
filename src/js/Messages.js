@@ -53,4 +53,5 @@ class Message {
                     this.item.split(' ')[2] + ' USD</p>';
                 return this.message
         }
-    }}
+    }
+}

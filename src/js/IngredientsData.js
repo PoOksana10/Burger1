@@ -35,7 +35,7 @@ class IngredientsData {
         document.querySelector('.container1').classList.add('hidden');
         this.parent.textContent = '';
         this.title.innerText = this.element;
-        let totalCals = this.BunCalories + this.MeatCalories;
+        let totalCals = this.burgerClass.BunCalories + this.burgerClass.MeatCalories;
         this.burgerClass.ingredientsBurger.forEach(item => {
             totalCals += item.cal;
         })
@@ -66,7 +66,7 @@ class IngredientsData {
             this.ingredients.forEach(ingredient => {
                 this.childMain = document.createElement('li');
                 for (let i = 0; i <= 4; i++) {
-                    this.childSub = document.createElement('td');
+                    this.childSub = document.createElement('td')
                     this.childMain.append(this.childSub);
                     if (i == 0) {
                         this.childSub.innerText = ingredient;
@@ -131,7 +131,7 @@ class IngredientsData {
             this.newUpdatedList = JSON.parse(localStorage.getItem('BurgerCalories'));
             this.selectedIngredient = this.newUpdatedList.find(element => element.ingredient === ingredientName);
             this.elementIndex = this.newUpdatedList.indexOf(this.selectedIngredient);
-            const cal_current = 
+            const cal_current =
                 document.querySelector(`.${'cal' + this.selectedIngredient.ingredient}`);
             if (addRemoveIngredientId === 'plus') {
                 this.newUpdatedList[this.elementIndex].status = true;
@@ -143,7 +143,7 @@ class IngredientsData {
                 this.newUpdatedList[this.elementIndex].cal = 0;
                 cal_current.innerText = '0 Cal';
             }
-            let totalCals = this.BunCalories + this.MeatCalories;
+            let totalCals = this.burgerClass.BunCalories + this.burgerClass.MeatCalories;
             this.newUpdatedList.forEach(item => {
                 totalCals += item.cal;
             })
@@ -155,7 +155,7 @@ class IngredientsData {
 
     updateStatusImg() {
         const img_current = document.querySelector(`.${this.selectedIngredient.ingredient}`);
-        this.newUpdatedList[this.elementIndex].status === true ? img_current.src = './images/ok.png' : 
+        this.newUpdatedList[this.elementIndex].status === true ? img_current.src = './images/ok.png' :
             img_current.src = './images/off.png';
     }
 }
